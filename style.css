@@ -1,52 +1,65 @@
-body {
-    width: 100%;
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #414141;
     height: 100vh;
-    background: linear-gradient(120deg, #5E0064, #9A5F5F, #001463);
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: Share Tech;
-}
-
-.login-wrap {
-    width: 400px;
-    height: 60vh;
-    background-color: #431735;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-h1, h2, h3 {
-    color: #4BEFBD;
-}
-
-.input-wrap {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
     align-items: center;
 }
 
-.input-wrap input {
-    border-radius: 25px;
-    height: 30px;
-    width: 250px;
+body {
+    margin: 0;
 }
 
-.button-wrap {
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 30px;
+}
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-form input {
+    height: 50px;
+    width: 317px;
+    
+}
+
+.form-input {
+    box-shadow: 1px 1px inset;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 33px;
+    color: #3391FF;
+}
+
+.cta {
+    height: 50px;
+    width: 317px;
+    background-color: #BCDBFF;
+    color: #3391FF;
+    border: none;
+    font-size: 33px;
+}
+.logo {
+    color: #FFFFBB;
+    margin-bottom: 120px;
     margin-top: 100px;
-    display: flex;
-    gap: 25px;
+    font-size: 41px;
 }
 
+.continue-link {
+    margin-top: 50px;
+    font-size: 23px;
+    color: #3391FF;
+}
 
-.button-wrap input{
-    width: 130px;
-    height: 30px;
-    background-color: white;
-    color: #4BEFBD;
-    font-weight: 900;
+::placeholder {
+    color: #BCDBFF;
 }
